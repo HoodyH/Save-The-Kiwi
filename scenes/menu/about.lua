@@ -33,7 +33,7 @@ function scene:create( event )
     aboutText.y = display.contentCenterY + display.contentHeight/10
     aboutText:addEventListener( 
         "tap",
-        function () system.openURL( 'https://github.com/pressure-plate/Save-The-Ocean' ) end 
+        function () system.openURL( 'https://www.twitch.tv/pixelkewie' ) end 
     )
 end
 

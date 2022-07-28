@@ -100,10 +100,10 @@ local function spawnFloatingObjects()
         }
         
         -- create object
-        local scaleFact = 0.18
+        local scaleFact = 0.28
         local spawnPosY = math.random( spawnCenterY - 100, spawnCenterY + 100 )
         local spawnPosX = display.contentWidth + 450 + (i * 150) + math.random( -50, 50 )
-        local newPickable = display.newRect( group, spawnPosX, spawnPosY, 233*scaleFact, 512*scaleFact )
+        local newPickable = display.newRect( group, spawnPosX, spawnPosY, 512*scaleFact, 512*scaleFact )
         newPickable.fill = paint
         newPickable.myType = "pickableObject"
         newPickable.myName = "floatingObject"

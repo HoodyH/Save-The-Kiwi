@@ -22,7 +22,7 @@ local function spawnFloatingObjects()
         {"pickables/barrel/4.png", 0.4},
         {"pickables/bag/2.png", 0.3},
         {"pickables/bag/3.png", 0.3},
-        {"neutral/coin1.png", 1.2},
+        {"neutral/kiwi.png", 0.8},
         {"neutral/pearl1.png", 1.2},
         {"neutral/seahorse1.png", 1.2},
     }
