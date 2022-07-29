@@ -161,7 +161,7 @@ function scene:create( event )
 		"tap", 
 		function ()
 			-- give user money each time he tap on the money display 
-			savedata.setGamedata( "money", savedata.getGamedata( "money" ) + 100 )
+			savedata.setGamedata( "money", savedata.getGamedata( "money" ) + 400 )
 			audio.play( getMoneySound )
 			scene.updateMoneyView()
 		end
