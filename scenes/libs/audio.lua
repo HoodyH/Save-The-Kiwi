@@ -5,7 +5,7 @@ local composer = require( "composer" )
 composer.setVariable( "audioDir", "audio/" )
 
 local M = {
-    buttonPlaySound = audio.loadSound( composer.getVariable( "audioDir" ) .. "sfx/play.mp3" ),
+    buttonPlaySound = audio.loadSound( composer.getVariable( "audioDir" ) .. "sfx/staiZitta.mp3" ),
     buttonClickSound = audio.loadSound( composer.getVariable( "audioDir" ) .. "sfx/click.mp3" ),
     buttonCloseSound = audio.loadSound( composer.getVariable( "audioDir" ) .. "sfx/close.mp3" ),
     buttonClickSound = audio.loadSound( composer.getVariable( "audioDir" ) .. "sfx/click.mp3" ),
@@ -22,7 +22,7 @@ function M.toggleMusic()
 
     local audioMute = savedata.getGamedata( "audioMute" )
     if audioMute then
-        audio.setVolume( 0.7, { channel=1 } )
+        audio.setVolume( 0.5, { channel=1 } )
         savedata.setGamedata( "audioMute", false)
     else
         audio.setVolume( 0, { channel=1 } )
@@ -37,7 +37,7 @@ function M.setFromSave()
     if audioMute then
         audio.setVolume( 0, { channel=1 } )
     else
-        audio.setVolume( 0.7, { channel=1 } )
+        audio.setVolume( 0.5, { channel=1 } )
     end
 end 
 

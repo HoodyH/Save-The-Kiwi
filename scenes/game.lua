@@ -521,10 +521,10 @@ function scene:create( event )
 	-- groundObjPickSound = audio.loadSound( audioDir .. "sfx/pickGroundObj.wav" )
 	-- floatingObjPickSound = audio.loadSound( audioDir .. "sfx/pickFloatingObj.wav" )
 	floatingObjPickSound = audio.loadSound( audioDir .. "sfx/uwu.mp3" )
-	groundObjPickSound = audio.loadSound( audioDir .. "sfx/uwu.mp3" )
-	obstacleCollisionSound = audio.loadSound( audioDir .. "sfx/explosion.wav" )
+	groundObjPickSound = audio.loadSound( audioDir .. "sfx/ruttino.mp3" )
+	obstacleCollisionSound = audio.loadSound( audioDir .. "sfx/seSeiForteSali.mp3" )
 	deadSeaSound = audio.loadSound( audioDir .. "sfx/deadSea.wav" )
-	multiplierUpSound = audio.loadSound( audioDir .. "sfx/multiplierUp.wav" )
+	multiplierUpSound = audio.loadSound( audioDir .. "sfx/bang.mp3" )
 
 	-- set event listener to update game speed
 	updateGameSpeedTimer = timer.performWithDelay( 1000, updateGameSpeed, 0 )
