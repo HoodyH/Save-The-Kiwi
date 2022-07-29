@@ -38,7 +38,7 @@ local function moveSubmarine( self, event )
 	local rotTimeDown = 1100-- rotation time down
 
 	-- start of touch
-    if ( event.phase == "began" ) then 
+    if ( event.phase == "began" or event.phase == "down" ) then 
 		 -- Set touch focus on the submarine (this means that the submarine object will "own" the touch event throughout its duration)
 		display.currentStage:setFocus( self )
 
@@ -52,7 +52,7 @@ local function moveSubmarine( self, event )
 		transition.cancel( self )
 		transRot = transition.to( self, { rotation = -rotDeg, time = rotTimeUp } )
 	
-	elseif ( event.phase == "ended" or event.phase == "cancelled" ) then
+	elseif ( event.phase == "ended" or event.phase == "cancelled" or event.phase == "up" ) then
 		-- Release touch focus on the ship
 		display.currentStage:setFocus( nil )
 
@@ -161,7 +161,9 @@ function M.create( submarineGroup, mainGroup )
 	
     -- set event listener to move the submarine
     submarine.touch = moveSubmarine
+	submarine.key = moveSubmarine
     Runtime:addEventListener( "touch", submarine )
+	Runtime:addEventListener( "key", submarine )
     
     -- set event listener onEnterFrame function
     submarine.enterFrame = onEnterFrame
@@ -189,6 +191,7 @@ function M.hideDid()
 
     -- remove Runtime listeners
     Runtime:removeEventListener( "touch", submarine )
+	Runtime:removeEventListener( "key", submarine )
     Runtime:removeEventListener( "enterFrame", submarine )
 	
 	-- cancel timers
