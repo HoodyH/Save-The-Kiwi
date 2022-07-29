@@ -48,8 +48,8 @@ local function spawnGroundObjects()
         }
         
         -- create object
-        local scaleFact = 0.18
-        local newPickable = display.newRect( group, display.contentWidth + math.random(600, 1400), display.contentHeight, 349*scaleFact, 512*scaleFact )
+        local scaleFact = 0.28
+        local newPickable = display.newRect( group, display.contentWidth + math.random(600, 1400), display.contentHeight, 512*scaleFact, 512*scaleFact )
         newPickable.fill = paint
         newPickable.anchorY = 1
         newPickable.myType = "pickableObject"

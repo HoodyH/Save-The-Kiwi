@@ -20,8 +20,8 @@ local function spawnFloatingObjects()
     local items = {
         {"pickables/bottle/1.png", 0.3},
         {"pickables/barrel/4.png", 0.4},
-        {"pickables/bag/2.png", 0.3},
-        {"pickables/bag/3.png", 0.3},
+        {"pickables/bag/1.png", 0.6},
+        {"pickables/barrel/3.png", 0.4},
         {"neutral/kiwi.png", 0.8},
         {"neutral/pearl1.png", 1.2},
         {"neutral/seahorse1.png", 1.2},

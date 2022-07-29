@@ -1,11 +1,5 @@
 # Save The Ocean
 
-A Solar2D game made for the Game Programming course at UNIUD by
+A Solar2D game made for the Game Programming course at UNIUD 
 
-- Fedrigo Mattia
-
-- Maestrutti Andrea
-
-- Mauro Luca
-
-- Not Simone
+Remake as a meme
